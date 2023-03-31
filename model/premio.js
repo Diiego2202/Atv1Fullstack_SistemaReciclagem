@@ -6,6 +6,6 @@ const premioSchema = mongoose.Schema({
     quantidade: {type: Number, required: true},
 });
 
-const Premio = mongoose.model('Reciclagem', premioSchema);
+const Premio = mongoose.model('Premio', premioSchema);
 
 module.exports = Premio;
