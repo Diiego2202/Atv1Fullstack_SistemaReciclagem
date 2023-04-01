@@ -7,8 +7,8 @@ const uri = "mongodb+srv://diiego2202:2202@cluster0.opgdhek.mongodb.net/CidadeVe
 
 mongoose.connect(uri).then(async (conn) => {
 
-    const ret = await usuarioController.criar('User1', '123', 10, 100, 100);
-    //const ret = await premioController.criar("641a546aaeae70c6ce18aa57");
+    //const ret = await usuarioController.criar('User2', '321', 20, 200, 200);
+    const ret = await reciclagemController.reciclar("642893a8e96134ae60fa3fb9", "Caixa de leite", "foto2", 5.3, 20);
     console.log(ret);
 
 })
